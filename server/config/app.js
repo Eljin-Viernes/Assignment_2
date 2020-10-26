@@ -1,3 +1,8 @@
+//File Name: Week 6
+//Eljin Viernes
+//300750971
+//October 25, 2020
+
 // installed 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
@@ -33,7 +38,7 @@ mongoDB.once('open', ()=>{
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-let booksRouter = require('../routes/book');
+let businessRouter = require('../routes/business');
 
 let app = express();
 
@@ -94,7 +99,7 @@ passport.use(strategy);
 // routing
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/book-list', booksRouter);
+app.use('/business-list', businessRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

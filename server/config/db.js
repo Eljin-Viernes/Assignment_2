@@ -1,6 +1,10 @@
+//File Name: Week 6
+//Eljin Viernes
+//300750971
+//October 25, 2020
+
 module.exports = 
 {
-    //"URI": "mongodb://localhost/book_store"
-    "URI": "mongodb+srv://thomas:Hq3DKYN2NaAqGyyV@mongodbserver.k15hk.azure.mongodb.net/book_store?retryWrites=true&w=majority",
+    "URI": "mongodb://localhost/business_contact_list",
     "Secret": 'SomeSecret'
 }

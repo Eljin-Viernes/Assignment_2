@@ -1,3 +1,8 @@
+//File Name: Week 6
+//Eljin Viernes
+//300750971
+//October 25, 2020
+
 // IIFE -- Immediately Invoked Function Expression
 (function(){
 
@@ -13,7 +18,7 @@
                 if(!confirm("Are you sure?")) 
                 {
                     event.preventDefault();
-                    window.location.assign('/book-list');
+                    window.location.assign('/business-list');
                 }
             });
         }
