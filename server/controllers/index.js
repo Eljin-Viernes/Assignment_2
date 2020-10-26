@@ -1,3 +1,8 @@
+//File Name: Week 6
+//Eljin Viernes
+//300750971
+//October 25, 2020
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -90,7 +95,7 @@ module.exports.processLoginPage = (req, res, next) => {
             }, token: authToken});
             */
 
-            return res.redirect('/book-list');
+            return res.redirect('/business-list');
         });
     })(req, res, next);
 }
@@ -151,7 +156,7 @@ module.exports.processRegisterPage = (req, res, next) => {
             */
 
             return passport.authenticate('local')(req, res, () => {
-                res.redirect('/book-list')
+                res.redirect('/business-list')
             });
         }
     });

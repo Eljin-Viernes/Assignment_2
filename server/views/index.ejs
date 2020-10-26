@@ -1,21 +1,145 @@
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
-  
+
+<!-- File Name: Week 6 -->
+<!-- Eljin Viernes -->
+<!-- 300750971 -->
+<!-- October 25, 2020 -->
 
   <!-- Main Content -->
   <main class="container">
+  <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+          }
+      </style>
+    <hr>
+    <img src="\Assets\images\logo.jpg">
+    <hr>
+
     <div class="jumbotron">
       <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
     </div>
+
+    <!-- 1.)
+            c.  Your Home Page should include some sort of welcome message and link or button that 
+                allows the user to redirect to your About Me Page and / or other pages. I recommend 
+                also including some sort of Mission Statement (2 Marks: Content) -->
+    <% if (title == "Home") { %>
+      <p>Hi and Welcome, Everyone you can change to other pages by clicking the icons or words in the navigator bar located at the top right of the screen.</p>
+      <% } else { %>
+      <% } %>
+    </li>
+
+    <!-- 1.)
+            d.  Your About MePage should include your legal name, an image of you (I recommend a
+                head and shoulders shot), a short paragraph about who you are. Keep this clean and
+                simple as it may be viewed by perspective employers. (1 Mark: Content) -->
+    <% if (title == "About") { %>
+      <!-- ****INSERT PICTURE OF YOURSELF HERE**** -->
+      <img src="\Assets\images\picture.jpeg" width="250" height="250">
+      <hr>
+      <p>Eljin Viernes is curently a student and a part time worker. His a full Filipino and raised in Canadian soil. Eljin is fueled by his passion for understanding cultural differences. He considers himself as a ‘forever student,’ eager to both build on his academic foundations such as web development and other programming languages, also he stay in tune with the latest technological advancement in technology.
+
+        His hunger for knowledge and determination to turn information into action. Meanwhile, he tries to improved his productivity and working ethic and ensuring a work-life balance for his school and part-time job.
+        
+        Eljin believes mindfulness in the school and workplace is key to success - a tenet he lives out through his interests in weight lifting, meditation, swimming, and biking. Eljin is currently working as a part time student in Aosom Canada Inc. and is always interested in a new challenges. Reach out to evierne1@my.centennialcollege.ca to connect!</p>
+        <hr>
+    <!-- 1.)
+            e.  Your About Me page should include a link to a PDF version of your Resume 
+                (1 Mark: Content). -->
+      <a href=https://drive.google.com/file/d/1Q0N6m7p72Z17QPEx-4_1RN21otZHuAM-/view?usp>
+      <p>Click here to see Resume</p>
+      <!-- ***NEED TO EDIT THIS*** (IMPORTANT!!!)-->
+        <% } else { %>
+      <% } %>
+    </li>
+
+    <!-- 1.)
+            f.  Your Projects Page should include images and information for at least 3 Projects
+                you wish to highlight. These could be current projects you are working on or past
+                projects you have completed. Include an image for each Project and a short description
+                of your role and the outcome. (2 Marks: Content). -->
+    <% if (title == "Projects") { %>
+      <hr>
+      <strong><u><p>First Project</p></strong></u>
+      <img src="\Assets\images\Project 1.JPG" width="750" height="500">
+      <p>Description:</p>
+      <p>-This is my pas project from semester one of my Software Engineering Technician course which I created a Instructor evaluation form</p>
+      <hr>
+      <strong><u><p>Second Project</p></strong></u>
+      <img src="\Assets\images\Project 2.JPG" width="750" height="500">
+      <p>-This is my pas project from semester one of my Software Engineering Technician course which I created a Centennial College form</p>
+      <hr>
+      <strong><u><p>Third Project</p></strong></u>
+      <img src="\Assets\images\Project 3.JPG" width="750" height="500">
+      <p>-This is my pas project from semester two of my Software Engineering Technician course which I created a calendar for my delivery system</p>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+
+      <% } else { %>
+      <% } %>
+    </li>
+
+    <!-- 1.)
+            g.  Your Services Pageshould include a short list of services you offer (e.g. general
+                programming, web development, mobile apps, etc.). I recommend including images that
+                make this more appealing to view. (2 Marks: Content). -->
+    <% if (title == "Services") { %>
+      <hr>
+      <p>I have some knowledge regarding to programming and web development which can be useful to you and your co-workers.</p>
+      <hr>
+      <img src="\Assets\images\Web Development.jpg" width="750" height="500">
+      <% } else { %>
+      <% } %>
+    </li>
+
+    <!-- 1.)
+            h.  Your Contact Page should include your contact information in a panel or other
+                construct. (1 Mark: Content).
+            
+            i.  Your Contact Page should include a short interactive form that allows the user
+                send you a message and provide basic contact information (First Name, Last Name,
+                Contact Number, Email Address, Message, etc.). This form does not have to be fully
+                functional initially. However, it should be able to capture the information entered
+                by the user and redirect them back to the Home Page (4 Marks: Content). -->
+    <% if (title == "Contact") { %>
+      <hr>
+      <p>Please contact me through email, cell or you can fill up a form and I will try to get back to you a soon as possible if you have any further question.</p>
+      <p>Email: evierne1@my.centennialcollege.ca</p>
+      <p>Phone: (647)-479-3497</p>
+      <hr>
+
+      <h2><u>Please fill up this form:</u></h2>
+
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" id="contact" name="contact" value=""><br>
+        <label for="email">Email Adress:</label><br>
+        <input type="text" id="email" name="email" value=""><br>
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message" value=""><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <p>If you click the "Submit" button, the form-data will be sent to the "Home" page.</p>
+      <hr>
+      <hr>
+      <hr>
+      <% } else { %>
+      <% } %>
+    </li>
+
   </main>
-  
-<%- include partials/bottom_nav.ejs %>  
 
-<%- include partials/footer.ejs %>
-  
+  <%- include partials/bottom_nav.ejs %>
 
-
-
-
+  <%- include partials/footer.ejs %>

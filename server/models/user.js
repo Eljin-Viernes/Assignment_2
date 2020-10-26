@@ -1,3 +1,8 @@
+//File Name: Week 6
+//Eljin Viernes
+//300750971
+//October 25, 2020
+
 // require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
